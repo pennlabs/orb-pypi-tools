@@ -1,0 +1,8 @@
+description: >
+  Test the PyPI package using tox
+
+steps:
+- run:
+    name: Run tests
+    command: |
+      tox

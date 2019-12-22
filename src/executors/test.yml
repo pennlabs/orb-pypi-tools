@@ -1,0 +1,5 @@
+description: >
+  Docker image to test the PyPI package
+
+docker:
+  - image: pennlabs/tox

@@ -1,0 +1,8 @@
+description: >
+  Publish a PyPI package
+
+executor: publish
+
+steps:
+  - checkout
+  - publish

@@ -1,0 +1,26 @@
+description: >
+  Test and publish a PyPI package. Testing will occur on all branches.
+  Publishing will only occur on tags in the format x.y.z
+
+usage:
+  version: 2.1
+
+  orbs:
+    pypi: pennlabs/pypi-tools@x.y.z
+
+  workflows:
+    build-and-publish:
+      jobs:
+        - pypi/test:
+            filters:
+              tags:
+                only: /.*/
+        - pypi/publish:
+            context: pypi-publish
+            requires:
+              - pypi/test
+            filters:
+              tags:
+                only: /[0-9]+(\.[0-9]+)*/
+              branches:
+                ignore: /.*/

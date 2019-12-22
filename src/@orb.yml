@@ -1,0 +1,5 @@
+version: 2.1
+
+description: >
+  Test, lint, upload code coverage for, and publish a PyPI package.
+  Built for internal use at Penn Labs.

@@ -1,0 +1,5 @@
+description: >
+  Docker image to publish the PyPI package
+
+docker:
+  - image: circleci/python:3.7

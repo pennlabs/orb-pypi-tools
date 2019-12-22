@@ -1,0 +1,8 @@
+description: >
+  Upload code coverage to Codecov
+
+steps:
+- run:
+    name: Upload code coverage
+    command: |
+      codecov

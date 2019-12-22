@@ -1,0 +1,10 @@
+description: >
+  Test a PyPI package
+
+executor: test
+
+steps:
+  - checkout
+  - test
+  - code-coverage
+  - upload-artifacts

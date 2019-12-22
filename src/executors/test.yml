@@ -2,4 +2,4 @@ description: >
   Docker image to test the PyPI package
 
 docker:
-  - image: pennlabs/tox
+  - image: "pennlabs/tox:42bb8e28b10c0189f6e596723998481ddba32895"
